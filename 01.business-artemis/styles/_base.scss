@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+a { 
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+html {
+    overflow-x: hidden;
+}
