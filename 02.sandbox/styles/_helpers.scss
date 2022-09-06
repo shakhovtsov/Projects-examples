@@ -1,0 +1,30 @@
+[hidden] {
+  display: none !important;
+}
+
+.text {
+  &-left {
+    text-align: left !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+}
+
+.align {
+
+  &-items-center {
+    align-items: center !important;
+  }
+
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

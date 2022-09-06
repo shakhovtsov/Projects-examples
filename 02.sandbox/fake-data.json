@@ -1,0 +1,17 @@
+{
+    "header": {
+        "brand": "Landie",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "buyNowBtn": "Buy Now"
+    },
+    "hero": {
+        "title": "Hello",
+        "description": "World",
+        "purchaseBtn": "...",
+        "learnBtn": "..."
+    }
+}

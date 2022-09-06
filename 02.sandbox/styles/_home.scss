@@ -1,0 +1,317 @@
+/* Body */
+body {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(111, 124, 178, 1);
+    font: 400 16px/26px 'Roboto', sans-serif;
+}
+
+/* Sticky Footer */
+.sticky-footer {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Container */
+.container {
+    max-width: $container-max-width;
+    padding: {
+        left: 15px;
+        right: 15px;
+    }
+}
+
+// Header
+.site-header {
+  padding: {
+    top: 15px;
+    bottom: 15px;
+  }
+}
+
+// Brand
+.brand {
+  color: rgba(55, 68, 126, 1);
+  font: {
+    size: 26px;
+    weight: 900;
+  }
+  text-decoration: none;
+}
+
+// Navigation
+.site-nav a {
+  color: rgba(80, 95, 152, 1);
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/* All buttons
+***************************/
+
+
+.btn {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(17, 27, 71, 1);
+    border-radius: 2px;
+    padding: 6px 15px;
+    min-width: 160px;
+    max-width: 260px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    border: 2px solid rgba(9, 17, 51, 1);
+}
+
+.btn-white {
+    margin-left: 30px;
+    color: rgba(9, 17, 51, 1);
+    background: rgba(255, 255, 255, 1);
+}
+
+.btn-purchase {
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 189px;
+    margin-top: 9px;
+}
+
+
+/* Main Hero
+***********************/
+
+/* heading заголовок для hero*/
+.hero h2, .backs {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    color: rgba(9, 17, 51, 1);
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(80, 95, 152, 1);
+    line-height: 30px;
+}
+
+.hero .btn {
+    margin-top: 69px;
+}
+.heroFoto {
+    background: url('../images/hero.png') no-repeat right top;
+    background-size:contain;
+    /* background-size: 100%; */
+    /* background-position: 100px -40px; */
+}
+
+/* Main Benefits
+**************************/
+
+.benefits,
+.sample  {
+   padding: 50px 0 50px 0;
+}
+
+.benefits-first h3, .sample h3, .purchase-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    color: rgba(9, 17, 51, 1);
+}
+
+.benefits-first p,
+.sample p,
+.purchase-text
+{
+    font: {
+      size: 16px;
+      weight: 400;
+    }
+    color: rgba(111, 124, 178, 1);
+    line-height: 26px;
+}
+
+.benefits-second h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(9, 17, 51, 1);
+    line-height: 26px;
+}
+
+.benefits-second p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(93, 105, 112, 1);
+    line-height: 18px;
+}
+
+/* Main services
+*************************/
+
+.sample{
+    column-gap: 100px;
+}
+/* Main purchase
+*******************************/
+
+.container-purchase {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 200px;
+}
+
+.see {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(93, 105, 112, 1);
+    margin-top: 60px;
+}
+
+.design {
+    font-size: 16px;
+    line-height: 139%;
+    font-weight: 400;
+    color: rgba(55, 68, 126, 1);
+}
+
+// .grid-row-2 {
+//   grid-row: span 2;
+// }
+
+.separator {
+  background-color: white;
+  height: 2px;
+  margin: {
+    top: 15px;
+    bottom: 15px;
+  }
+}
+
+footer .separator {
+  margin: {
+    top: 30px;
+    bottom: 30px;
+  }
+}
+.footer__one {
+  height: 109px;
+}
+
+
+/* footer
+******************************/
+main {
+    margin-bottom: 200px;
+}
+.footer {
+    background-color: rgba(231, 236, 255, 1);
+}
+
+%some-magic {
+  justify-self: end;
+  align-self: center;
+}
+
+.btn-foot {
+  @extend %some-magic;
+}
+
+.icon {
+  @extend %some-magic;
+
+  a {
+    text-decoration: none;
+
+    &:hover svg {
+      opacity: 1;
+      transform: scale(1.5);
+      transition: 0.5s;
+      filter: contrast(20%);
+    }
+  }
+
+  svg {
+    margin: 20px 0 15px 40px;
+    text-decoration: none;
+  }
+}
+
+.company {
+  align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .grid-col-4 {
+        /* background-color: orange; */
+        grid-column: span 12;
+    }
+    /*HERO
+    ************************/
+
+    .hero .grid-col-6 {
+        grid-column: span 12;
+    }
+    /*Benefits
+    ************************/
+    .benefits-first {
+        grid-column: span 12;
+    }
+    .benefits-four {
+        grid-area: 2/7/3/13;
+    }
+    .benefits-second {
+        align-self: center;
+    }
+
+    /*services
+    ************************/
+    .sample .grid-col-6 {
+        grid-column: span 12;
+    }
+    /*footer
+    ************************/
+    .brand {
+        text-align: start;
+    }
+    .footer .grid-row {
+        row-gap: 10px;
+    }
+    .company {
+        grid-area: 1/1/2/3;
+    }
+    .btn-foot {
+        grid-area: 1/11/2/13;
+
+    }
+    .icon {
+        grid-area: 3/9/6/13;
+
+    }
+    .footer nav {
+        grid-area: 3/1/6/4;
+    }
+    .site-header nav, .footer nav {
+        margin: 18px 0px;
+    }
+    p {
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+
+/* @media (max-width: 576px) {
+    .grid-col-4 {
+        background-color: green;
+    }
+} */
+

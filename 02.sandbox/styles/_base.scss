@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat($grid-colum-count, 1fr);
+}
+
+@for $i from 1 through $grid-colum-count {
+  .grid-col-#{$i} {
+    grid-column: span $i;
+  }
+}
